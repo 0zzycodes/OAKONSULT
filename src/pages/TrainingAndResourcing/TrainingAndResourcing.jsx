@@ -38,7 +38,7 @@ const TrainingAndResourcing = () => {
           }}
         >
           <VideoModal
-            data={['https://www.youtube.com/embed/4iir1nvI444']}
+            data={['https://www.youtube.com/embed/IpQeVtuDeIA']}
             closeFunc={() => {
               ChangeDisplayModal(false);
             }}
@@ -153,15 +153,15 @@ const TrainingAndResourcing = () => {
           <p>The BYS Course seeks to:</p>
           <ul>
             <li>
-              provide a deeper understanding of the disability community and the
+              Provide a deeper understanding of the disability community and the
               church’s obligation to reach out to those who are most vulnerable
             </li>
             <li>
-              address the issue of suffering as a Christian and implications for
+              Address the issue of suffering as a Christian and implications for
               how the Christian community views the issues of disability
             </li>
             <li>
-              learn to embrace the student’s own brokenness in a whole new way
+              Learn to embrace the student’s own brokenness in a whole new way
             </li>
           </ul>
         </div>

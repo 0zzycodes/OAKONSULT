@@ -5,10 +5,10 @@ const TagDetail = (props) => {
   if (props.data[0].tagName) {
     switch (props.data[0].tagName) {
       case 'FOR PARENT CARERS':
-        color = { background: '#0AA7FF' };
+        color = { background: '#cbc593' };
         break;
       case 'FOR CHURCHES':
-        color = { background: '#b00aff' };
+        color = { background: '#009ba7' };
         break;
 
       default:

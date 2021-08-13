@@ -16,6 +16,10 @@ const AddGallery = ({ setDialogVisible }) => {
   const [loading, setLoading] = useState(false);
   const [photoUrl, setPhotoUrl] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const CleanUp = () => {
+    setLoading(false);
+    setDialogVisible(false);
+  };
   const onSubmit = async (e) => {
     setLoading(true);
     e.preventDefault();
@@ -29,9 +33,7 @@ const AddGallery = ({ setDialogVisible }) => {
       return;
     }
     try {
-      await OnAddPhoto(galleryData);
-      setLoading(false);
-      setDialogVisible(false);
+      OnAddPhoto(galleryData, CleanUp);
     } catch (error) {
       console.log(error);
       setLoading(false);

@@ -18,6 +18,10 @@ const AddEvent = ({ setDialogVisible }) => {
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const CleanUp = () => {
+    setLoading(false);
+    setDialogVisible(false);
+  };
   const onSubmit = async (e) => {
     setLoading(true);
     e.preventDefault();
@@ -35,9 +39,7 @@ const AddEvent = ({ setDialogVisible }) => {
       return;
     }
     try {
-      await OnAddEvent(eventData);
-      setLoading(false);
-      setDialogVisible(false);
+      OnAddEvent(eventData, CleanUp);
     } catch (error) {
       console.log(error);
       setLoading(false);

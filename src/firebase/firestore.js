@@ -6,19 +6,23 @@ const courseRef = firestore.collection("courses");
 const blogRef = firestore.collection("blogs");
 const inboxRef = firestore.collection("inbox");
 
-export const OnAddPhoto = (data) => {
+export const OnAddPhoto = (data, CleanUp) => {
   galleryRef.doc().set(data);
+  CleanUp();
 };
 
-export const OnAddQuote = (data) => {
+export const OnAddQuote = (data, CleanUp) => {
   quotesRef.doc(data.id).set(data);
+  CleanUp();
 };
-export const OnEditQuote = (data) => {
+export const OnEditQuote = (data, CleanUp) => {
   quotesRef.doc(data.id).update(data);
+  CleanUp();
 };
 
-export const OnAddEvent = (data) => {
+export const OnAddEvent = (data, CleanUp) => {
   eventRef.doc(data.date).set(data);
+  CleanUp();
 };
 
 export const sendNotification = (data) => {
@@ -44,14 +48,16 @@ export const OnToggleArticleOfTheWeek = async (postId, state) => {
   }
 };
 
-export const OnPost = (data) => {
+export const OnPost = (data, CleanUp) => {
   blogRef.doc(data.id).set(data);
+  CleanUp();
 };
 
 export const OnSaveToDraft = (data) => {
   blogRef.doc(data.id).set(data);
 };
 
-export const OnPostEdit = (data) => {
+export const OnPostEdit = (data, CleanUp) => {
   blogRef.doc(data.id).update(data);
+  CleanUp();
 };

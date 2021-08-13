@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import "./styles.scss";
 
-const InviteToSpeakMOdal = ({ setDialogVisible }) => {
+const InviteToSpeakMOdal = ({ setDialogVisible, title }) => {
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -49,7 +49,7 @@ const InviteToSpeakMOdal = ({ setDialogVisible }) => {
       ) : (
         <div className="flex-center add-employee">
           <div className="flex-vertical-center add-employee-head">
-            <span>Invite Me</span>
+            <span>{title ? title : 'Invite me to speak'}</span>
             <div
               className="flex-center close-icon"
               onClick={() => setDialogVisible(false)}

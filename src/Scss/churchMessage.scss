@@ -7,7 +7,7 @@ $grey: #a9a6a6;
 $blue: #0aa7ff;
 $purple: #ff0ac9;
 $yellow: #ffba0a;
-$churchPagePurple: #b00aff;
+$gold: #cac492;
 
 @mixin BGConfig($size, $position) {
   background-position: $position;
@@ -28,7 +28,7 @@ $churchPagePurple: #b00aff;
       .quote_dash {
         height: 0.75rem;
         width: 50px;
-        background: $churchPagePurple;
+        background: $gold;
         margin-right: 1rem;
       }
       #quoteSource {
@@ -38,7 +38,6 @@ $churchPagePurple: #b00aff;
     }
     #quote {
       font-family: $DM;
-      text-transform: capitalize;
       font-size: 78px;
       font-weight: normal;
       //   max-width: 90%;
@@ -51,13 +50,12 @@ $churchPagePurple: #b00aff;
       font-weight: normal;
       font-size: 22px;
       line-height: 31px;
-      text-transform: capitalize;
       width: 80%;
       color: rgba(0, 0, 0, 0.66);
       margin-bottom: 3rem;
     }
     #watchStory {
-      background: rgba(177, 10, 255, 0.5);
+      background: $gold;
       height: 64px;
       width: 365px;
       display: flex;
@@ -69,7 +67,7 @@ $churchPagePurple: #b00aff;
       .icon {
         height: '50px';
         width: '50px';
-        background-image: url(../Assets/icons/purplePlayBtn.svg);
+        background-image: url(../Assets/icons/tealPlayBtn.svg);
         @include BGConfig(80%, center);
       }
 
@@ -97,32 +95,29 @@ $churchPagePurple: #b00aff;
 #Churches_goals {
   background: url(../Assets/images/lecture.jpg);
   @include BGConfig(120%, center);
-  min-height: 80vh;
   height: max-content;
   border-radius: 10px;
 
   .bgLayer {
-    background: rgba(176, 10, 255, 0.85);
-    min-height: 80vh;
+    background: $gold;
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 10px;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
   }
-  #heartIcon {
-    height: 100px;
-    width: 100px;
-    background: url(../Assets/icons/purple_heartIcon.svg);
-    @include BGConfig(100%, center);
-    // margin-top: 6rem;
-  }
+  // #heartIcon {
+  //   height: 100px;
+  //   width: 100px;
+  //   background: url(../Assets/icons/tealHeartIcon.svg);
+  //   @include BGConfig(100%, center);
+  //   // margin-top: 6rem;
+  // }
   p {
     font-family: $Archivo;
     font-style: normal;
     font-weight: normal;
     font-size: 26.4px;
     line-height: 47.2px;
-    text-transform: capitalize;
     color: #ffffff;
     margin: 2rem 0;
   }
@@ -134,14 +129,13 @@ $churchPagePurple: #b00aff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
   border-radius: 12px;
   padding: 1rem 2rem;
-  margin: -8rem 0 0 2rem;
+  margin: -4rem 0 0 2rem;
   ul {
     li {
       font-style: normal;
       font-weight: normal;
       font-size: 23px;
       line-height: 41px;
-      text-transform: capitalize;
       color: rgba(0, 0, 0, 0.49);
       list-style: outside;
       margin-bottom: 2rem;
@@ -152,7 +146,6 @@ $churchPagePurple: #b00aff;
     font-weight: normal;
     font-size: 55px;
     line-height: 55px;
-    text-transform: capitalize;
     color: #000000;
     position: relative;
     margin-bottom: 3rem;
@@ -164,7 +157,7 @@ $churchPagePurple: #b00aff;
       bottom: -1rem;
       width: 50px;
       height: 10px;
-      background: $churchPagePurple;
+      background: $gold;
       border-radius: 10px;
     }
   }
@@ -177,7 +170,7 @@ $churchPagePurple: #b00aff;
     // width: 50%;
     min-width: 801px;
     height: 763px;
-    background: $churchPagePurple;
+    background: $gold;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 2rem;
@@ -187,7 +180,6 @@ $churchPagePurple: #b00aff;
       font-weight: normal;
       font-size: 55px;
       line-height: 55px;
-      text-transform: capitalize;
       margin-bottom: 2rem;
     }
     ul {
@@ -198,7 +190,6 @@ $churchPagePurple: #b00aff;
         font-weight: normal;
         font-size: 23px;
         line-height: 52px;
-        text-transform: capitalize;
         margin-bottom: 1rem;
         margin-left: 1rem;
       }
@@ -211,7 +202,7 @@ $churchPagePurple: #b00aff;
       font-weight: normal;
       font-size: 55px;
       line-height: 63px;
-      text-transform: capitalize;
+
       color: #000000;
       margin-bottom: 3rem;
       position: relative;
@@ -223,7 +214,7 @@ $churchPagePurple: #b00aff;
         border-radius: 20px;
         height: 0.5rem;
         width: 2rem;
-        background: $churchPagePurple;
+        background: $gold;
       }
     }
     ul {
@@ -231,9 +222,8 @@ $churchPagePurple: #b00aff;
         font-weight: normal;
         font-size: 22px;
         line-height: 27px;
-        text-transform: capitalize;
         color: #000000;
-        list-style: url(../Assets/icons/purpleHyphen.svg);
+        list-style: url(../Assets/icons/hyphen.svg);
         margin-bottom: 1rem;
       }
     }

@@ -27,13 +27,13 @@
       position: relative;
       box-shadow: $shadow;
       .for-parents-button {
-        background-color: lighten($color: $for_parents, $amount: 10);
+        background-color: lighten($color: $oakGold, $amount: 10);
       }
       .for-siblings-button {
-        background-color: lighten($color: $for_siblings, $amount: 10);
+        background-color: lighten($color: $oakGold, $amount: 10);
       }
       .for-carers-button {
-        background-color: lighten($color: $for_carers, $amount: 10);
+        background-color: lighten($color: $oakGold, $amount: 10);
       }
       .tag-button {
         position: absolute;
@@ -51,6 +51,7 @@
         margin-top: auto;
         margin-bottom: 2em;
         .title {
+          font-family: "Archivo", sans-serif;
           font-size: 1.6em;
           cursor: pointer;
         }
@@ -60,6 +61,7 @@
       }
     }
     .hook {
+      font-family: "Archivo", sans-serif !important;
       font-size: 1.4em;
       margin-bottom: 1.5em;
     }

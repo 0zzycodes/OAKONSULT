@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import Popup from '../Components/PopUp/Popup';
 import Dialog from '../componentz/Dialog/Dialog';
 import InviteToSpeakMOdal from '../componentz/InviteToSpeakMOdal/InviteToSpeakMOdal';
-
 import '../Scss/Main.scss';
 
 const Main = (props) => {
@@ -177,8 +176,10 @@ const Main = (props) => {
 
             <div className='footerBox'>
               <h3>contact</h3>
-              <a href='https://hey.com'>- Send us an email</a>
-              <a href='https://hey.com'>- Give us a call</a>
+              <a href='mailto:OLUFUNKE.ADELOYE@OAKONSULT.COM '>
+                - Send us an email
+              </a>
+              <a href='tel:+447368934865'>- Give us a call</a>
             </div>
 
             <div className='footerBox'>
@@ -191,8 +192,12 @@ const Main = (props) => {
 
             <div className='footerBox'>
               <h3>about OAK</h3>
-              <a href='https://hey.com'>- our story</a>
-              <a href='https://hey.com'>- abigail's story</a>
+              <a href='/blogs/for-parents/up-and-going-with-active-socialization?9ac33c12589a49fc9d222b7685e07ab8'>
+                - our story
+              </a>
+              <a href="/blogs/for-parents/abigail's-story?ace50500afe74156b38ddd889f4eb7e2">
+                - abigail's story
+              </a>
               <a href='/donations'>- make a donation</a>
             </div>
           </div>

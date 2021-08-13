@@ -3,17 +3,18 @@ import SunEditor from "suneditor-react";
 import plugins from "suneditor/src/plugins";
 import image from "suneditor/src/plugins/dialog/link";
 import "suneditor/dist/css/suneditor.min.css";
-import loader from "../../../assetz/loader.gif";
-
-import "./styles.scss";
 import CustomInput from "../../../componentz/CustomInput/CustomInput";
 import Spacing from "../../../componentz/Spacing/Spacing";
 import { OnPostEdit } from "../../../firebase/firestore";
 import CustomButton from "../../../componentz/CustomButton/CustomButton";
 import { GetWindowDimensions } from "../../../utils/functions";
-import { useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
+import loader from "../../../assetz/loader.gif";
+
+import "./styles.scss";
 
 const EditPost = () => {
+  const history = useHistory();
   const location = useLocation();
   const data = location.state;
   const [errorMessage, setErrorMessage] = useState("");
@@ -30,6 +31,10 @@ const EditPost = () => {
   };
   const handleChange = (content) => {
     setBody(content);
+  };
+  const CleanUp = () => {
+    setLoading(false);
+    history.goBack();
   };
   const OnEditPost = async () => {
     if (body === "" || title === "" || thumbnail === "" || hook === "") {
@@ -55,8 +60,7 @@ const EditPost = () => {
       comments: data.comments,
     };
     try {
-      await OnPostEdit(newTopic);
-      setLoading(false);
+      OnPostEdit(newTopic, CleanUp);
     } catch (error) {
       console.log(error);
       setErrorMessage("Failed, try again");

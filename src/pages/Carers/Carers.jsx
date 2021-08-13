@@ -36,7 +36,7 @@ const Carers = () => {
           }}
         >
           <VideoModal
-            data={['https://www.youtube.com/embed/4iir1nvI444']}
+            data={['https://www.youtube.com/embed/FMXHY5xSbOE']}
             closeFunc={() => {
               ChangeDisplayModal(false);
             }}
@@ -52,7 +52,7 @@ const Carers = () => {
           <p id='quoteText'>
             At OAKONSULT we are passionate about empowering and supporting
             Carers to garner inner strength and forge ahead in their individual
-            lives notwithstanding the associated challenges.
+            lives not withstanding the associated challenges.
           </p>
           {/* btn */}
           <div
@@ -71,6 +71,27 @@ const Carers = () => {
         </div>
       </div>
       <div id='Carer_goals'>
+        <div id='forSiblings'>
+          <iframe
+            width='560'
+            height='315'
+            src='https://www.youtube.com/embed/-ypL6F7Mj0A'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width='560'
+            height='315'
+            src='https://www.youtube.com/embed/uecw4ymegRg'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen
+          ></iframe>
+        </div>
+
         <div className='bgLayer'>
           <div id='heartIcon'></div>
           <p>
@@ -142,7 +163,7 @@ const Carers = () => {
             <div className='courseContainer'>
               <h3>PROJECT ME</h3>
               <p id='ProjectMeAim'>
-                ‘Project Me’ aims to support the Carer to find fulfilment and
+                ‘Project Me’ aims to support carers to find fulfilment and
                 purpose
                 <br /> in her caring role; and to push beyond boundaries for
                 herself!
@@ -150,17 +171,17 @@ const Carers = () => {
               </p>
 
               <ul>
-                <li>give Carers the courage to let go</li>
-                <li>allow Carers to set their minds free to dream again</li>
+                <li>Give Carers the courage to let go</li>
+                <li>Allow Carers to set their minds free to dream again</li>
                 <li>
-                  give Carers the encouragement needed to pursue personal dreams
+                  Give Carers the encouragement needed to pursue personal dreams
                 </li>
                 <li>
-                  liberate Carers from the ‘guilt’ of personal success or
+                  Liberate Carers from the ‘guilt’ of personal success or
                   achievement
                 </li>
                 <li>
-                  give opportunities for Carers to learn from and give support
+                  Give opportunities for Carers to learn from and give support
                   to one another.
                 </li>
               </ul>
@@ -184,7 +205,7 @@ const Carers = () => {
           className='SeeRelatedArticle CTA_Btn'
           id='btn'
           style={{
-            backgroundColor: '#0aa7ff',
+            backgroundColor: '#009ba7',
             marginBottom: '6rem',
             marginTop: '3rem',
           }}

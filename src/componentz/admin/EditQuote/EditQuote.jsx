@@ -15,13 +15,17 @@ const EditQuote = ({ data, setDialogVisible }) => {
   const [quote, setQuote] = useState(data.quote);
   const [bibleVerse, setBibleVerse] = useState(data.bible_verse);
   const [errorMessage, setErrorMessage] = useState("");
+  const CleanUp = () => {
+    setLoading(false);
+    setDialogVisible(false);
+  };
   const onSubmit = async (e) => {
     setLoading(true);
     e.preventDefault();
     const quoteData = {
+      id: data.id,
       quote,
-      bible_verse: bibleVerse,
-      created_at: Date.now(),
+      bible_verse: bibleVerse
     };
     if (quote.trim() === "") {
       setLoading(false);
@@ -29,9 +33,7 @@ const EditQuote = ({ data, setDialogVisible }) => {
       return;
     }
     try {
-      await OnEditQuote(quoteData);
-      setLoading(false);
-      setDialogVisible(false);
+      OnEditQuote(quoteData, CleanUp);
     } catch (error) {
       console.log(error);
       setLoading(false);

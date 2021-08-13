@@ -27,6 +27,7 @@ import Trash from './pages/admin/Trash/Trash';
 import Inbox from './pages/admin/Inbox/Inbox';
 import Published from './pages/admin/Published/Published';
 import Programmes from './Components/Programs/Programmes';
+import About from './Components/About/About';
 
 import './App.scss';
 import EditPost from './pages/admin/EditPost/EditPost';
@@ -150,6 +151,16 @@ const App = () => {
           render={() => (
             <Main>
               <Programmes />
+            </Main>
+          )}
+        />
+
+        <Route
+          exact
+          path={`/about`}
+          render={() => (
+            <Main>
+              <About />
             </Main>
           )}
         />

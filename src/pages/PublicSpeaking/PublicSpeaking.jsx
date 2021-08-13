@@ -172,7 +172,7 @@ const PublicSpeaking = () => {
         className='SeeRelatedArticle CTA_Btn'
         id='btn'
         style={{
-          backgroundColor: '#ff6725',
+          backgroundColor: '#009ba7',
           marginBottom: '6rem',
           marginTop: '3rem',
         }}

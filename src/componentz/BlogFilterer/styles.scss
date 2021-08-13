@@ -1,24 +1,38 @@
-@import "../../constants/scss/colors";
-@import "../../constants/scss/variables";
-@import "../../constants/scss/mixins";
-@import "../../constants/scss/framework";
+@import '../../constants/scss/colors';
+@import '../../constants/scss/variables';
+@import '../../constants/scss/mixins';
+@import '../../constants/scss/framework';
+
+$oakGold: #cac492;
 
 .line {
   width: 15em;
   height: 0.05em;
   background-color: $black;
 }
+
+.blog-filterer {
+  flex-wrap: wrap;
+}
+.filtering-buttons {
+  flex-wrap: wrap;
+}
 .filter-button {
   padding: 1em 3em;
   font-size: 1.3em;
+
+  @include smartphone() {
+    margin: 1rem 0 0 0;
+  }
+
   //   background-image: linear-gradient(#0aa7ff, #0aa5ff3a), url(../../assets/images/placeholder.png);
 }
 .for-parents {
-  background-color: #a2ddff;
+  background-color: $oakGold;
 }
 .for-siblings {
-  background-color: #ff8ce6;
+  background-color: $oakGold;
 }
 .for-carers {
-  background-color: #ffdf8c;
+  background-color: $oakGold;
 }
